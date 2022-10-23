@@ -1,7 +1,13 @@
+import GlobalStyle from './config/GlobalStyle'
 import AppRoutes from './routes/AppRoutes'
 
 function App(): JSX.Element {
-	return <AppRoutes />
+	return (
+		<>
+			<GlobalStyle />
+			<AppRoutes />
+		</>
+	)
 }
 
 export default App
