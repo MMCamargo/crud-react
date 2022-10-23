@@ -1,6 +1,8 @@
 import FormInputStyle from './FormInputStyle'
 
-interface FormInputProps {}
+interface FormInputProps {
+	type?: string
+}
 
 function FormInput(props: FormInputProps): JSX.Element {
 	return <FormInputStyle />

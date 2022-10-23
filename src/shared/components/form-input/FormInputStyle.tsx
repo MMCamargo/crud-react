@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const FormInputStyle = styled.input`
 	background-color: #fafafa;
-    width: 100%;
+    width: 50%;
 `
 
 export default FormInputStyle
