@@ -8,7 +8,7 @@ function Home(): JSX.Element {
 		<Container>
 				<Header></Header>
 			<Table>
-				<Task></Task>
+				<Task/>
 			</Table>
 		</Container>
 	)
