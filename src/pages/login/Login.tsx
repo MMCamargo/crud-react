@@ -1,7 +1,8 @@
 import Container from '../../shared/components/container/Container'
-import FormButtonStyle from '../../shared/components/form-button/FormButtonStyle'
+import FormButton from '../../shared/components/form-button/FormButton'
 import FormCard from '../../shared/components/form-card/FormCard'
-import FormInput from '../../shared/form-input/FormInput'
+import FormInput from '../../shared/components/form-input/FormInput'
+import FormLink from '../../shared/components/form-link/FormLink'
 
 function Login(): JSX.Element {
 	return (
@@ -9,11 +10,14 @@ function Login(): JSX.Element {
 			<FormCard>
 				<FormInput />
 				<FormInput />
-				<FormButtonStyle />
+				<FormButton />
+				<p>
+					Não possui uma conta?
+					<FormLink>Cadastre-se!</FormLink>
+				</p>
 			</FormCard>
 		</Container>
 	)
-	
 }
 
 export default Login
