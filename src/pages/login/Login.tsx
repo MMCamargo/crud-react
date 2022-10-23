@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Container from '../../shared/components/container/Container'
 import FormButton from '../../shared/components/form-button/FormButton'
 import FormCard from '../../shared/components/form-card/FormCard'
@@ -13,7 +14,7 @@ function Login(): JSX.Element {
 				<FormButton />
 				<p>
 					Não possui uma conta?
-					<FormLink>Cadastre-se!</FormLink>
+					<Link to ="/Register">Cadastra-se!</Link>
 				</p>
 			</FormCard>
 		</Container>
