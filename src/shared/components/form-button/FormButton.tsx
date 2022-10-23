@@ -1,20 +1,9 @@
-import FormButtonStyle from "./FormButtonStyle"
+import FormButtonStyle from './FormButtonStyle'
 
-interface FormButtonProps {
-	
-}
+interface FormButtonProps {}
 
 function FormButton(props: FormButtonProps): JSX.Element {
-	return (
-       
-      <FormButtonStyle />
-
-
-    )
-
-
-
-
+	return <FormButtonStyle />
 }
 
 export default FormButton

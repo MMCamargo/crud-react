@@ -1,20 +1,11 @@
-import FormLinkStyle from "./FormLink"
+import FormLinkStyle from './FormLink'
 
 interface FormLinkProps {
-	
+	children: string
 }
 
 function FormLink(props: FormLinkProps): JSX.Element {
-	return (
-       
-      <FormLinkStyle />
-
-
-    )
-
-
-
-
+	return <FormLinkStyle>{props.children}</FormLinkStyle>
 }
 
 export default FormLink
