@@ -1,11 +1,29 @@
-import FormTitle from '../../../../shared/components/title/Title'
-import HeaderStyle from './HeaderStyle'
+import { AppBar, Toolbar, Typography } from '@mui/material'
+import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded'
+import { Link as RouterLink } from 'react-router-dom'
 
 function Header(): JSX.Element {
 	return (
-		<HeaderStyle>
-			<FormTitle>Bem-vindo, Usuário</FormTitle>
-		</HeaderStyle>
+		<AppBar position='fixed'>
+			<Toolbar>
+				<Typography variant='h4'>TaskList</Typography>
+				<RouterLink
+					to={'/'}
+					style={{
+						color: 'inherit',
+						position: 'absolute',
+						right: '16px',
+						marginTop: '4px'
+					}}
+				>
+					<LogoutRoundedIcon
+						sx={{
+							fontSize: '32px'
+						}}
+					/>
+				</RouterLink>
+			</Toolbar>
+		</AppBar>
 	)
 }
 

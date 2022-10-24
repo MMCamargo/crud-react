@@ -1,16 +1,15 @@
-import Container from '../../shared/components/container/Container'
+import HomeContainer from './components/home-container/HomeContainer'
 import Header from './components/header/Header'
-import Table from './components/table/Table'
-import Task from './components/task/Task'
+import Welcome from './components/welcome/Welcome'
+import TaskList from './components/task-list/TaskList'
 
 function Home(): JSX.Element {
 	return (
-		<Container>
-				<Header></Header>
-			<Table>
-				<Task/>
-			</Table>
-		</Container>
+		<HomeContainer>
+			<Header />
+			<Welcome />
+			<TaskList />
+		</HomeContainer>
 	)
 }
 

@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 const ContainerStyle = styled.div`
-	width: 100vw;
-	height: 100vh;
-	display: grid;
 	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 100vh;
 	justify-items: center;
+	width: 100vw;
 `
 
 export default ContainerStyle
